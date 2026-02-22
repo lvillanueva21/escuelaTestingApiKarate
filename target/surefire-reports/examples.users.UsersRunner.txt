@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: examples.users.UsersRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.056 s <<< FAILURE! - in examples.users.UsersRunner
+examples.users.UsersRunner.testUsers  Time elapsed: 1.05 s  <<< ERROR!
+java.lang.RuntimeException: extraneous input '\n\n    Examples:' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+	at com.intuit.karate.core.FeatureParser.parse(FeatureParser.java:74)
+	at com.intuit.karate.core.Feature.read(Feature.java:63)
+	at com.intuit.karate.resource.ResourceUtils.findFeatureFiles(ResourceUtils.java:88)
+	at com.intuit.karate.Runner$Builder.resolveAll(Runner.java:249)
+	at com.intuit.karate.Suite.<init>(Suite.java:171)
+	at com.intuit.karate.junit5.Karate.iterator(Karate.java:59)
+	at java.base/java.lang.Iterable.spliterator(Iterable.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

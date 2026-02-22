@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"examples\/users\/users[1:10]","start":1771713315878,"end":1771713317389,"title":"examples\/users\/users[1:10] 17:35:15.878-17:35:17.389 Verificar la creación de una nueva mascota en Pet Store - OK","className":"failed"},{"id":2,"group":1,"content":"examples\/users\/users[2.1:33]","start":1771713317429,"end":1771713318110,"title":"examples\/users\/users[2.1:33] 17:35:17.429-17:35:18.110 Verificar el estado de la mascota por los 3 estados (available, sold, pending) - OK"},{"id":3,"group":1,"content":"examples\/users\/users[2.2:34]","start":1771713318121,"end":1771713318588,"title":"examples\/users\/users[2.2:34] 17:35:18.121-17:35:18.588 Verificar el estado de la mascota por los 3 estados (available, sold, pending) - OK"},{"id":4,"group":1,"content":"examples\/users\/users[2.3:35]","start":1771713318602,"end":1771713319057,"title":"examples\/users\/users[2.3:35] 17:35:18.602-17:35:19.057 Verificar el estado de la mascota por los 3 estados (available, sold, pending) - OK"},{"id":5,"group":1,"content":"examples\/users\/users[3:38]","start":1771713319066,"end":1771713319406,"title":"examples\/users\/users[3:38] 17:35:19.066-17:35:19.406 Verificar la actualización de una mascota  en pet store previamente registrada - OK"},{"id":6,"group":1,"content":"examples\/users\/users[4.1:59]","start":1771713319412,"end":1771713319427,"title":"examples\/users\/users[4.1:59] 17:35:19.412-17:35:19.427 Verificar la búsqueda de mascota por id - OK","className":"failed"},{"id":7,"group":1,"content":"examples\/users\/users[4.2:60]","start":1771713319441,"end":1771713319448,"title":"examples\/users\/users[4.2:60] 17:35:19.441-17:35:19.448 Verificar la búsqueda de mascota por id - OK","className":"failed"},{"id":8,"group":1,"content":"examples\/users\/users[4.3:61]","start":1771713319459,"end":1771713319474,"title":"examples\/users\/users[4.3:61] 17:35:19.459-17:35:19.474 Verificar la búsqueda de mascota por id - OK","className":"failed"},{"id":9,"group":1,"content":"examples\/users\/users[5.1:72]","start":1771713319490,"end":1771713319842,"title":"examples\/users\/users[5.1:72] 17:35:19.490-17:35:19.842 Verificar la eliminación de la mascota por id (solo ids del test) - OK","className":"failed"},{"id":10,"group":1,"content":"examples\/users\/users[5.2:73]","start":1771713319854,"end":1771713320198,"title":"examples\/users\/users[5.2:73] 17:35:19.854-17:35:20.198 Verificar la eliminación de la mascota por id (solo ids del test) - OK","className":"failed"},{"id":11,"group":1,"content":"examples\/users\/users[5.3:74]","start":1771713320206,"end":1771713320540,"title":"examples\/users\/users[5.3:74] 17:35:20.206-17:35:20.540 Verificar la eliminación de la mascota por id (solo ids del test) - OK"},{"id":12,"group":1,"content":"examples\/users\/users[6:78]","start":1771713320545,"end":1771713321570,"title":"examples\/users\/users[6:78] 17:35:20.545-17:35:21.570 Subir una imagen para una mascota existente - OK"},{"id":13,"group":1,"content":"examples\/users\/users[7:88]","start":1771713321575,"end":1771713321922,"title":"examples\/users\/users[7:88] 17:35:21.575-17:35:21.922 Verificar la búsqueda de mascota por id - OK","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

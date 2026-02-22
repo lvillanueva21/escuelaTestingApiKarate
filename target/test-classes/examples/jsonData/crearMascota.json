@@ -1,0 +1,8 @@
+{
+  "id": "#(java.lang.System.currentTimeMillis())",
+  "category": { "id": 1, "name": "dogs" },
+  "name": "Max",
+  "photoUrls": ["string"],
+  "tags": [{ "id": 1, "name": "string" }],
+  "status": "available"
+}
