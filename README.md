@@ -2,7 +2,7 @@ Proyecto de Pruebas Automatizadas con Karate
 
 Este proyecto contiene un conjunto de pruebas automatizadas para la API [ServeRest](https://serverest.dev), desarrolladas utilizando el framework Karate. Las pruebas cubren varios endpoints, incluyendo la creación, obtención, actualización y eliminación de usuarios y productos.
 
-Por Luigi Villanueva Perez
+Por Luigi Villanueva Perez - Hice una modificación en README
 
 ## 1. Prerrequisitos
 
