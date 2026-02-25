@@ -1,8 +1,18 @@
 {
-  "id": "#(java.lang.System.currentTimeMillis())",
-  "category": { "id": 1, "name": "dogs" },
+  "id": 14,
+  "category": {
+    "id": 0,
+    "name": "string"
+  },
   "name": "Max",
-  "photoUrls": ["string"],
-  "tags": [{ "id": 1, "name": "string" }],
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
   "status": "available"
 }
